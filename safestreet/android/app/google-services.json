@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "846827894143",
+    "project_id": "safestreet-61d28",
+    "storage_bucket": "safestreet-61d28.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:846827894143:android:9910e267b55dd3fe52d64a",
+        "android_client_info": {
+          "package_name": "com.example.safestreet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpMz58GtMI5xDmmHAww2-kPAY2CkZAkpc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

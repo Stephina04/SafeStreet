@@ -1,0 +1,90 @@
+name: mysafestreet
+description: "A neighborhood watch app with AI, blockchain & chat."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.1 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core Dependencies
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  http: ^1.3.0
+  flutter_local_notifications: ^18.0.1
+  google_maps_flutter: ^2.7.0  # 🔄 Downgraded for compatibility
+  geolocator: ^10.1.0  # ✅ Latest stable
+  geocoding: ^2.1.1  # ✅ Fixed version issue
+
+  # Chat System (WhatsApp-like Messaging)
+  cloud_firestore: ^5.6.5
+  firebase_core: ^3.12.1
+  firebase_auth: ^5.0.0
+  firebase_storage: ^12.0.0
+  flutter_chat_ui: ^1.6.9
+  flutter_chat_types: ^3.6.0
+
+  # AI & Machine Learning
+  tflite_flutter: ^0.11.0
+  google_mlkit_face_detection: ^0.12.0
+  dart_openai: ^5.1.0
+
+  # Blockchain (Decentralized Crime Reporting)
+  web3dart: ^2.7.0
+  flutter_secure_storage: ^10.0.0-beta.4
+  pointycastle: 3.9.1  # ✅ Updated cryptography library
+
+  # Additional Features
+  image_picker: ^1.0.7  # 📸 For media uploads
+  video_player: ^2.8.2  # 🎥 For video playback
+  flutter_launcher_icons: ^0.14.3  # 🚀 Custom app icons
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0  # ✅ Updated
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/  # Folder for images, icons, and media files
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"
+
+dependency_overrides:
+  js: ^0.7.2
+  async: ^2.13.0
+  boolean_selector: ^2.1.2
+  characters: ^1.4.0
+  clock: ^1.1.2
+  collection: ^1.19.1
+  fake_async: ^1.3.3
+  ffi: ^2.1.4
+  geocoding: ^3.0.0
+  geocoding_ios: ^3.0.1
+  geolocator: ^13.0.2
+  geolocator_web: ^4.1.1
+  leak_tracker: ^10.0.9
+  leak_tracker_flutter_testing: ^3.0.9
+  matcher: ^0.12.17
+  material_color_utilities: ^0.12.0
+  meta: ^1.16.0
+  path: ^1.9.1
+  petitparser: ^6.1.0
+  pointycastle: ^3.9.1
+  source_span: ^1.10.1
+  stack_trace: ^1.12.1
+  stream_channel: ^2.1.4
+  string_scanner: ^1.4.1
+  term_glyph: ^1.2.2
+  test_api: ^0.7.4
+  vm_service: ^15.0.0
+  win32: ^5.11.0
