@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AIChatbotPage extends StatelessWidget {
+  const AIChatbotPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

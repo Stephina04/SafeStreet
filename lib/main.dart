@@ -19,6 +19,8 @@ void main() {
 }
 
 class SafeStreetApp extends StatelessWidget {
+  const SafeStreetApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
