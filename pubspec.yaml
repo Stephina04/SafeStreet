@@ -17,8 +17,8 @@ dependencies:
   firebase_core: ^3.12.1  # Updated to match cloud_firestore version
   firebase_auth: ^5.5.1
   cloud_firestore: ^5.6.5
-  firebase_storage: ^10.0.0
-  firebase_messaging: ^10.0.0
+  firebase_storage: ^12.4.4
+  firebase_messaging: ^15.2.4
   google_maps_flutter: ^2.6.0
 
 dev_dependencies:

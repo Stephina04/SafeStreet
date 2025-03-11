@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../pages/other_page.dart'; // Use relative import
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -6,31 +7,21 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("SafeStreet"),
-        centerTitle: true,
-      ),
+      appBar: AppBar(title: const Text('SafeStreet')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              "Welcome to SafeStreet!",
-              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 20),
+            const Text('Welcome to SafeStreet'),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/incident');
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const OtherPage()),
+                );
               },
-              child: Text("Report an Incident"),
-            ),
-            SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/alerts');
-              },
-              child: Text("View Alerts"),
+              child: const Text('Go to Next Page'),
             ),
           ],
         ),
