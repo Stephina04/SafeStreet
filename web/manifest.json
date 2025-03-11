@@ -1,6 +1,6 @@
 {
-    "name": "mysafestreet",
-    "short_name": "mysafestreet",
+    "name": "safestreet",
+    "short_name": "safestreet",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
